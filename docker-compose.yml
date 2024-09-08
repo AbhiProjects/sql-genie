@@ -1,0 +1,9 @@
+services:
+  web:
+    image: mathmateai/sql-genie
+    container_name: "sql-genie"
+    restart: always
+    ports:
+      - '127.0.0.1:5000:5000'
+    environment:
+      OPEN_API_KEY: ""
